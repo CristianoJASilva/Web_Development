@@ -1,150 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRIMAVERA Business Software 
-    Solutions</title>
-    <!-- Link font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
-    
-    <!-- Fonte Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRIMAVERA Business Software Solutions</title>
 
-    <!-- CSS externo -->
-    <link rel="stylesheet" href="Projecto_01_HTML_CSS.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="Projecto HTML e CSS/imagens e textos/imagens/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Telefone -->
-    <a href="tel:919204462" class="telefone" aria-label="Ligar 919 204 462">
-        <img src="Projecto HTML e CSS/imagens e textos/imagens/telefone.png" alt="Telefone" class="telefoneImagem">
-        <span class="telefoneNumero">919 204 462</span>
-    </a>      
+  <!-- Google Font: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="Projecto_01_HTML_CSS.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="Projecto HTML e CSS/imagens e textos/imagens/favicon.ico" type="image/x-icon" />
 </head>
 <body>
+
+  <!-- Checkbox que controla o aviso de cookies -->
+  <input type="checkbox" id="aceitei" class="cookie-toggle">
+
+  <!-- Aviso de Cookies -->
+  <div class="cookie-overlay">
+    <div class="cookie-bar">
+      <p>
+        Este website utiliza cookies para melhorar a sua experiência de navegação. Para continuar a navegar, deve ler e aceitar os 
+        <a href="#">Termos e condições</a>
+      </p>
+      <!-- Botão que marca o checkbox -->
+      <label for="aceitei" class="cookie-btn">Li e aceito</label>
+    </div>
+  </div>
+
   <!-- alvo no topo da página -->
   <div id="topo"></div>
-  
-<header>
-  <div class="top-bar">
-    <a href="https://pt.primaverabss.com/pt/" class="logo">
-      <img src="Projecto HTML e CSS/imagens e textos/imagens/logotipo.png" alt="Aceder ao site da Primavera Cegid">
-    </a>
 
-    <div class="icons">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <i class="fa-solid fa-user-plus"></i>
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+  <!-- Telefone fixo -->
+  <a href="tel:919204462" class="telefone" aria-label="Ligar 919 204 462">
+    <img src="Projecto HTML e CSS/imagens e textos/imagens/telefone.png" alt="Telefone" class="telefoneImagem">
+    <span class="telefoneNumero">919 204 462</span>
+  </a>
 
-      <!-- Ícone hambúrguer -->
-      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </div>
-  </div>
+  <div class="page">
+    <header>
+      <div class="top-bar">
+        <a href="https://pt.primaverabss.com/pt/" class="logo">
+          <img src="Projecto HTML e CSS/imagens e textos/imagens/logotipo.png" alt="Aceder ao site da Primavera Cegid">
+        </a>
 
-  <!-- Checkbox escondido -->
-  <input type="checkbox" id="menu-toggle">
+        <div class="icons">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
+          <i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="#">Contabilistas</a></li>
-      <li><a href="#">Setor Privado</a></li>
-      <li><a href="#">Setor Público</a></li>
-      <li><a href="#">Formação</a></li>
-      <li><a href="#">Parceiros</a></li>
-      <li><a href="#">Carreiras</a></li>
-    </ul>
-  </nav>
-</header>
-<!-- ---------------------------------------------------
-BANNER
---------------------------------------------------- --->
-<section class="banner">
-  <img class="bannerFundo"
-       src="Projecto HTML e CSS/imagens e textos/imagens/fundoBanner.jpg" alt="Fundo banner">
+          <!-- Ícone hambúrguer (abre o menu em mobile) -->
+          <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </label>
+        </div>
+      </div>
 
-  <div class="bannerTexto">
-    <h1>TECNOLOGIA PARA VENCER</h1>
-    <h2>Conheça os casos de sucesso PRIMAVERA</h2>
-    <h3>Na linha da frente na digitalização de empresas</h3>
-    <a class="caixaLink" href="https://pt.primaverabss.com/pt/pagina/tecnologia-para-vencer/">Saiba mais</a>
-  </div>
+      <!-- Checkbox (toggle do menu) -->
+      <input type="checkbox" id="menu-toggle">
 
-  <img class="bannerComputador"
-       src="Projecto HTML e CSS/imagens e textos/imagens/computador.png" alt="Computador">
-</section>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Contabilistas</a></li>
+          <li><a href="#">Setor Privado</a></li>
+          <li><a href="#">Setor Público</a></li>
+          <li><a href="#">Formação</a></li>
+          <li><a href="#">Parceiros</a></li>
+          <li><a href="#">Carreiras</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- ---------------------------------------------------
-MISSÃO
---------------------------------------------------- --->
-<h2>Missão</h2>
-<section class="missao">
-  <div class="missao-imagem">
-    <img src="Projecto HTML e CSS/imagens e textos/imagens/missao.jpg" alt="Imagem Missão">
-  </div>
-  <div class="missao-texto">
-    <p class="missaoP1">Simplificar a vida nas organizações, aumentando a criação de valor, é a nossa grande missão.</p>
-    <P class="missaoP2">Desafiar o desconhecido. Explorar possibilidades. Transpor barreiras. Inovar. São estas as motivações que desde 1993 nos conduzem na busca de soluções de gestão inovadoras que simplificam a vida nas organizações.</P>
-    <p class="missaoP2">A paixão pela inovação na gestão empresarial está no ADN da PRIMAVERA. Um entusiasmo contagiante que colocamos ao serviço das organizações, disponibilizando-lhes um leque crescente de soluções de gestão que agilizam as operações e aumentam a rentabilidade do negócio.</p>
-    <p class="missaoP2">Acreditamos na força das ideias. Auxiliamos a sua concretização. Impulsionamos os resultados. Defendemos que com a tecnologia certa, crescer é o caminho. Do mais pequeno micronegócio a uma grande multinacional, disponibilizamos soluções ajustadas, ágeis e funcionais que dão mais força ao negócio.</p>
-    <a href="https://pt.primaverabss.com/fotos/editor2/brochurainstitucional_2017_web2.pdf" 
-    class="missaoLink">» Conheça a nossa brochura institucional</a>
-  </div>
-</section>
-<hr>
-<!-- ---------------------------------------------------
-EQUIPA
---------------------------------------------------- --->
-<h2>Equipa</h2>
-<section class="equipa">
-  <div class="membro">
-    <img src="Projecto HTML e CSS/imagens e textos/imagens/foto1.png" alt="Colaborador 1">
-    <div class="overlay">
-      <p class="nome">Daniela Alves</p>
-      <p class="cargo">Web Developer</p>
-    </div>
-  </div>
-  <div class="membro">
-    <img src="Projecto HTML e CSS/imagens e textos/imagens/foto2.png" alt="Colaborador 2">
-    <div class="overlay">
-      <p class="nome">Manuela Ribeiro</p>
-      <p class="cargo">Front-end Developer</p>
-    </div>
-  </div>
-  <div class="membro">
-    <img src="Projecto HTML e CSS/imagens e textos/imagens/foto3.png" alt="Colaborador 3">
-    <div class="overlay">
-      <p class="nome">Bruna Silva</p>
-      <p class="cargo">Designer</p>
-    </div>
-  </div>
-</section>
-<hr>
-<!-- ---------------------------------------------------
-Oferta formativa
---------------------------------------------------- --->
-<h2>Oferta formativa</h2>
-<section class="oferta">
-  <img src="Projecto HTML e CSS/imagens e textos/imagens/slider1.jpg" 
-       alt="Oferta formativa" 
-       class="ofertaImagem">
+    <main>
+      <!-- =================================================
+           BANNER
+      ================================================== -->
+      <section class="banner">
+        <img class="bannerFundo" src="Projecto HTML e CSS/imagens e textos/imagens/fundoBanner.jpg" alt="Fundo banner">
 
-  <div class="ofertaTexto">
-    <h1>PRIMAVERA Academy</h1>
-    <h2>Juntos seremos mais fortes!</h2>
-    <h3>Aposte em novas competências</h3>
-  </div>
-</section>
-<!-- ---------------------------------------------------
-FOOTER
---------------------------------------------------- --->
-<footer>
-    <div class="footer-section">
+        <div class="bannerTexto">
+          <h1>TECNOLOGIA PARA VENCER</h1>
+          <h2>Conheça os casos de sucesso PRIMAVERA</h2>
+          <h3>Na linha da frente na digitalização de empresas</h3>
+          <a class="caixaLink" href="https://pt.primaverabss.com/pt/pagina/tecnologia-para-vencer/">Saiba mais</a>
+        </div>
+
+        <img class="bannerComputador" src="Projecto HTML e CSS/imagens e textos/imagens/computador.png" alt="Computador">
+      </section>
+
+      <!-- =================================================
+           MISSÃO
+      ================================================== -->
+      <h2>Missão</h2>
+      <section class="missao">
+        <div class="missao-imagem">
+          <img src="Projecto HTML e CSS/imagens e textos/imagens/missao.jpg" alt="Imagem Missão">
+        </div>
+        <div class="missao-texto">
+          <p class="missaoP1">Simplificar a vida nas organizações, aumentando a criação de valor, é a nossa grande missão.</p>
+          <p class="missaoP2">Desafiar o desconhecido. Explorar possibilidades. Transpor barreiras. Inovar. São estas as motivações que desde 1993 nos conduzem na busca de soluções de gestão inovadoras que simplificam a vida nas organizações.</p>
+          <p class="missaoP2">A paixão pela inovação na gestão empresarial está no ADN da PRIMAVERA. Um entusiasmo contagiante que colocamos ao serviço das organizações, disponibilizando-lhes um leque crescente de soluções de gestão que agilizam as operações e aumentam a rentabilidade do negócio.</p>
+          <p class="missaoP2">Acreditamos na força das ideias. Auxiliamos a sua concretização. Impulsionamos os resultados. Defendemos que com a tecnologia certa, crescer é o caminho. Do mais pequeno micronegócio a uma grande multinacional, disponibilizamos soluções ajustadas, ágeis e funcionais que dão mais força ao negócio.</p>
+          <a href="https://pt.primaverabss.com/fotos/editor2/brochurainstitucional_2017_web2.pdf" class="missaoLink">» Conheça a nossa brochura institucional</a>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- =================================================
+           EQUIPA
+      ================================================== -->
+      <h2>Equipa</h2>
+      <section class="equipa">
+        <div class="membro">
+          <img src="Projecto HTML e CSS/imagens e textos/imagens/foto1.png" alt="Colaborador 1">
+          <div class="overlay">
+            <p class="nome">Daniela Alves</p>
+            <p class="cargo">Web Developer</p>
+          </div>
+        </div>
+
+        <div class="membro">
+          <img src="Projecto HTML e CSS/imagens e textos/imagens/foto2.png" alt="Colaborador 2">
+          <div class="overlay">
+            <p class="nome">Manuela Ribeiro</p>
+            <p class="cargo">Front-end Developer</p>
+          </div>
+        </div>
+
+        <div class="membro">
+          <img src="Projecto HTML e CSS/imagens e textos/imagens/foto3.png" alt="Colaborador 3">
+          <div class="overlay">
+            <p class="nome">Bruna Silva</p>
+            <p class="cargo">Designer</p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- =================================================
+           OFERTA FORMATIVA
+      ================================================== -->
+      <h2>Oferta formativa</h2>
+      <section class="oferta">
+        <img src="Projecto HTML e CSS/imagens e textos/imagens/slider1.jpg" alt="Oferta formativa" class="ofertaImagem">
+        <div class="ofertaTexto">
+          <h1>PRIMAVERA Academy</h1>
+          <h2>Juntos seremos mais fortes!</h2>
+          <h3>Aposte em novas competências</h3>
+        </div>
+      </section>
+    </main>
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+    <footer>
+      <div class="footer-section">
         <h3>PRIMAVERA</h3>
         <ul>
           <li><a href="#">Sobre a PRIMAVERA</a></li>
@@ -169,7 +190,7 @@ FOOTER
           <li><a href="#">Study Visits</a></li>
           <li><a href="#">Formação de Docentes</a></li>
         </ul>
-      </div> 
+      </div>
 
       <div class="footer-section">
         <h3>NOTICIAS E EVENTOS</h3>
@@ -179,14 +200,15 @@ FOOTER
           <li><a href="#">Blog</a></li>
           <li><a href="#">Newsletter</a></li>
         </ul>
-      </div> 
+      </div>
 
       <div class="footer-section">
         <h3>CONTACTOS</h3>
         <ul>
           <li><a href="#">Como Chegar</a></li>
           <li><a href="#">Contactar agora</a></li>
-      </div> 
+        </ul>
+      </div>
 
       <div class="footer-section">
         <h3>SITE</h3>
@@ -194,11 +216,14 @@ FOOTER
           <li><a href="#">Política de Privacidade</a></li>
           <li><a href="#">Termos de Utilização</a></li>
           <li><a href="#">Mapa do Site</a></li>
-      </div>      
-</footer>
-<!-- seta fixa -->
-<a href="#topo" class="setaTopo" aria-label="Voltar ao topo" role="button">
-  <img src="Projecto HTML e CSS/imagens e textos/imagens/setacima.png" alt="" />
-</a>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Seta fixa: voltar ao topo -->
+    <a href="#topo" class="setaTopo" aria-label="Voltar ao topo" role="button">
+      <img src="Projecto HTML e CSS/imagens e textos/imagens/setacima.png" alt="">
+    </a>
+  </div> <!-- fecha .page -->
 </body>
 </html>

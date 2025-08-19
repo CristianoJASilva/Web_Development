@@ -412,3 +412,92 @@ Seta “voltar ao topo”
   .telefone,
   .setaTopo{ display:none; }
 }
+/* ====================================
+COOKIES
+=================================== */
+
+/* Impede scroll enquanto o aviso está visível */
+.page {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Overlay visível por defeito */
+.cookie-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3000;
+  display: block;
+}
+
+/* Barra de cookies no topo */
+.cookie-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 100px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 3100;
+}
+
+/* Texto */
+.cookie-bar p {
+  margin: 0;
+  color: rgb(170,170,170);
+  font-size: .95rem;
+  text-align: center;
+}
+
+/* Link Termos */
+.cookie-bar p a {
+  color: #0075be;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cookie-bar p a:hover {
+  text-decoration: underline;
+}
+
+/* Botão aceitar */
+.cookie-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #f16248;
+  color: #f5f5f5;
+  border-radius: 22px;
+  border: 2px solid transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.cookie-btn:hover {
+  background: #f5f5f5;
+  color: #f16248;
+  border-color: #f16248;
+}
+
+/* Quando o checkbox está marcado → esconde aviso e liberta scroll */
+.cookie-toggle:checked ~ .cookie-overlay {
+  display: none;
+}
+.cookie-toggle:checked ~ .page {
+  height: auto;
+  overflow: visible;
+}
+
+/* Responsivo */
+@media (max-width: 1300px) {
+  .cookie-bar {
+    flex-direction: column;
+    gap: 12px;
+    height: auto;
+    padding: 12px 16px;
+  }
+}

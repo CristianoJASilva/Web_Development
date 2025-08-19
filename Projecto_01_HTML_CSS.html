@@ -18,10 +18,18 @@
     
     <!-- Favicon -->
     <link rel="icon" href="Projecto HTML e CSS/imagens e textos/imagens/favicon.ico" type="image/x-icon" />
-    
+
+    <!-- Telefone -->
+    <a href="tel:919204462" class="telefone" aria-label="Ligar 919 204 462">
+        <img src="Projecto HTML e CSS/imagens e textos/imagens/telefone.png" alt="Telefone" class="telefoneImagem">
+        <span class="telefoneNumero">919 204 462</span>
+    </a>      
 </head>
 <body>
-  <header>
+  <!-- alvo no topo da página -->
+  <div id="topo"></div>
+  
+<header>
   <div class="top-bar">
     <a href="https://pt.primaverabss.com/pt/" class="logo">
       <img src="Projecto HTML e CSS/imagens e textos/imagens/logotipo.png" alt="Aceder ao site da Primavera Cegid">
@@ -31,8 +39,16 @@
       <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-solid fa-user-plus"></i>
       <i class="fa-solid fa-arrow-right-to-bracket"></i>
+
+      <!-- Ícone hambúrguer -->
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
     </div>
   </div>
+
+  <!-- Checkbox escondido -->
+  <input type="checkbox" id="menu-toggle">
 
   <nav>
     <ul class="menu">
@@ -180,6 +196,9 @@ FOOTER
           <li><a href="#">Mapa do Site</a></li>
       </div>      
 </footer>
-    
+<!-- seta fixa -->
+<a href="#topo" class="setaTopo" aria-label="Voltar ao topo" role="button">
+  <img src="Projecto HTML e CSS/imagens e textos/imagens/setacima.png" alt="" />
+</a>
 </body>
 </html>

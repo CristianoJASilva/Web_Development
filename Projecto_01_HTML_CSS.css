@@ -1,0 +1,312 @@
+/* ====================================
+Estilo geral do body
+======================================= */
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+/* ====================================
+Titulos de cada seccao
+======================================= */
+h2 {
+    font-size: 250%;
+    color: #3c368c;
+    font-weight: bold;
+    text-align: center;
+}
+/* ====================================
+Header
+======================================= */
+header{
+  background:#f5f5f5;
+  padding:20px;            
+}
+/* TOP BAR: logo + ícones*/
+.top-bar{
+  height:80px;                 
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+/* ====================================
+Icons
+======================================= */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.icons i {
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+/* ====================================
+Menu
+======================================= */
+nav .menu {
+  list-style: none; 
+  width:95%;       
+  margin: 20px auto 0;
+  padding: 0 20px; 
+  display: flex; 
+  justify-content:space-between;        
+}
+nav .menu a {
+  color: #a4a3a3;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav .menu a:hover { 
+    color: #0075be; 
+}
+/* ====================================
+Banner
+======================================= */
+.banner{
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  display: flex;         
+  align-items: flex-start;
+  padding-left: 60px 40px 0 40px;      
+}
+.bannerFundo{
+  position: absolute;
+  inset: 0;                
+  width: 100%;
+  height: 95%;
+  object-fit: cover;      
+  z-index: -1;             
+}
+.bannerTexto h1 { 
+    font-size:48px; 
+    color:#fff; 
+    text-align: left;
+    margin-left: 30px;
+}
+.bannerTexto h2 { 
+    font-size:30px; 
+    color:#ccc; 
+    text-align: left;
+    margin-left: 30px;
+}
+.bannerTexto h3 { 
+    font-size:20px; 
+    color:#fff; 
+    font-style:italic; 
+    text-align: left;
+    margin-left: 30px;
+}
+.bannerTexto .caixaLink{
+  display:inline-block; 
+  font-weight:bold;
+  background: #f53e1d; 
+  color:#f5f5f5;
+  padding:6px 30px; 
+  border-radius:20px; 
+  text-decoration:none;
+  text-align: left;
+  margin-left: 30px;
+}
+.bannerTexto .caixaLink:hover { 
+    background:#c8c8c8; 
+    color:#252525; 
+}
+.bannerComputador {
+  position: absolute;
+  top: 175px;          
+  right: 20px;       
+  width: 220px;       
+  height: 320px;
+}
+/* escondida abaixo de 1100px */
+@media (max-width:1100px){
+  .bannerComputador{ display:none; }
+}
+/* ====================================
+Missao
+======================================= */
+.missaoP1 {
+  color:  #252525;
+  font-weight: bold;  
+}
+.missaoP2 {
+  color:  #7d7d7d;
+  line-height: 1.4rem;
+}
+.missaoLink {
+  color: #0075be;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.missaoLink:hover {
+  text-decoration: underline;
+}
+hr {
+  border-top: 2px solid;
+  color: #7d7d7d;
+  margin: auto;
+}
+.missao {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.missao img {
+  width: 80%;        
+  height: auto;       
+  object-fit: cover;  
+  display: block;     
+}
+
+/* ====================================
+Equipa
+======================================= */
+.equipa {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.membro {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+}
+.membro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; 
+  transition: border-radius 0.3s ease;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+}
+.overlay .nome {
+  font-size: 125%; 
+  font-weight: bold;
+}
+.overlay .cargo {
+  font-size: 100%; 
+}
+.membro:hover img {
+  border-radius: 0; 
+}
+.membro:hover .overlay {
+  opacity: 1;
+}
+/* ====================================
+Oferta formativa 
+======================================= */
+.oferta {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;               
+  align-items: center;        
+  justify-content: center;     
+}
+
+.ofertaImagem {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ofertaTexto {
+  position: absolute;         
+  text-align: center;         
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.ofertaTexto h1 {
+  font-size: 42px;
+  color: #f27d29;
+  margin: 0;
+}
+
+.ofertaTexto h2 {
+  font-size: 35px;
+  color: #153c85;
+  margin: 0 0 20px 0;
+}
+
+.ofertaTexto h3 {
+  font-size: 26px;
+  color: #153c85;
+  margin: 0;
+}
+/* ====================================
+Footer
+======================================= */
+footer {
+  background: #ebebeb;        
+  padding: 40px 60px;         
+  display: flex;              
+  justify-content: space-between;
+  flex-wrap: wrap;           
+}
+
+/* Cada coluna */
+.footer-section {
+  flex: 1;
+  min-width: 150px;          
+  margin: 0 20px;
+}
+
+/* Títulos */
+.footer-section h3 {
+  color: #252525;            
+  font-weight: bold;         
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* Lista */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links */
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #7d7d7d;             
+  text-decoration: none;       
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;  
+}
+

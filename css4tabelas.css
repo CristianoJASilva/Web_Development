@@ -1,0 +1,27 @@
+/* table {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+}
+th {
+    border: 1px solid black;
+} */
+
+table, td, th {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+td, th {
+    padding: 10px 20px;
+}
+thead > tr tfoot > tr{
+    background-color: grey;
+    color: white;
+}
+caption {
+    caption-side: bottom;
+    margin-top: 10px;
+}

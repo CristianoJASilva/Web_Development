@@ -1,0 +1,169 @@
+1ª Sessão
+
+Compare Visual Studio 2022 Editions
+https://visualstudio.microsoft.com/vs/compare/
+Visual Studio Code
+https://code.visualstudio.com/
+Keyboard shortcuts for Visual Studio Code
+https://code.visualstudio.com/docs/configure/keybindings
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+Emmet
+https://emmet.io/
+Emmet in Visual Studio Code
+https://code.visualstudio.com/docs/languages/emmet
+Emmet Cheat Sheet
+https://docs.emmet.io/cheat-sheet/
+Lorem Ipsum
+https://www.lipsum.com/feed/html
+Information about the compatibility of web technologies with different browsers
+https://caniuse.com/
+https://caniuse.com/ciu/index
+Figma
+https://www.figma.com/
+Inkscape - ferramenta de desenho vectorial
+https://inkscape.org/
+GIMP - Ferramenta de desenho bitmap
+https://www.gimp.org/
+HTML
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content
+https://developer.mozilla.org/en-US/docs/Web/HTML
+
+
+
+2ª Sessão
+
+The HTML Handbook – Learn HTML for Beginners
+https://www.freecodecamp.org/news/the-html-handbook/
+W3Schools - HTML Tutorial
+https://www.w3schools.com/html/default.asp
+Gitlab
+https://about.gitlab.com/
+Bitbucket
+https://bitbucket.org/product/
+Version Control
+https://en.wikipedia.org/wiki/Version_control
+Git
+https://en.wikipedia.org/wiki/Git
+Livro Pro Git
+https://git-scm.com/book/en/v2
+Atlassian
+https://www.atlassian.com/
+Developer Roadmaps
+https://roadmap.sh/
+https://roadmap.sh/frontend
+https://roadmap.sh/backend
+https://roadmap.sh/devops
+Tiobe Programming Index
+https://www.tiobe.com/tiobe-index/
+Low Code Development - Outsystems
+https://www.outsystems.com/low-code/
+ITJobs
+https://www.itjobs.pt/
+Indeed
+https://pt.indeed.com/?r=us
+ASCII
+https://en.wikipedia.org/wiki/ASCII
+ASCII Table
+https://www.ascii-code.com/
+Unicode
+https://en.wikipedia.org/wiki/Unicode
+UTF-8
+https://en.wikipedia.org/wiki/UTF-8
+ISO/IEC 8859-1
+https://en.wikipedia.org/wiki/ISO/IEC_8859-1
+
+
+
+3ª Sessão
+
+Google Fonts
+https://fonts.google.com/
+CSS Zen Garden
+https://csszengarden.com/
+CSS Fonts
+https://flaviocopes.com/css-fonts/
+CSS current work & how to participate
+https://www.w3.org/Style/CSS/current-work.en.html
+
+
+
+4ª Sessão
+
+CSS Handbook
+https://flaviocopes.pages.dev/books/css-handbook.pdf
+CSS: Cascading Style Sheets
+https://developer.mozilla.org/en-US/docs/Web/CSS
+CSS styling basics
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics
+CSS Tutorial
+https://www.w3schools.com/css/default.asp
+CSS Tricks
+https://css-tricks.com/
+
+
+
+5" Sessão
+
+WayBack Machine
+https://web.archive.org/
+HTML5 Element Index
+https://html5doctor.com/element-index/
+CSS Flexible Box Layout Module Level 1
+https://www.w3.org/TR/css-flexbox-1/
+CSS Flexbox Layout Guide
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Flexbox
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox
+Basic concepts of flexbox
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+Para aprender Flexbox
+https://flexboxfroggy.com/
+https://codingfantasy.com/games/flexboxadventure
+http://www.flexboxdefense.com/
+https://mastery.games/post/flexboxzombies2/
+https://preview.webflow.com/preview/flexbox-game?preview=d1a26b027c4803817087a91c651e321f&m=1
+
+
+
+6ª Sessão
+
+Utilização de FLexbox e CSS Grid
+https://www.porsche.com/portugal/
+A/B testing
+https://en.wikipedia.org/wiki/A/B_testing
+Cursor - The AI Code Editor
+https://cursor.com/
+
+
+
+7ª Sessão
+
+Color Everything in CSS
+https://css-tricks.com/color-everything-in-css/
+hsl()
+https://css-tricks.com/almanac/functions/h/hsl/
+opacity
+https://css-tricks.com/almanac/properties/o/opacity/
+Scalable Vector Graphics Color Names
+https://johndecember.com/html/spec/colorsvg.html
+Adobe Color
+https://color.adobe.com/create/color-wheel
+Pantone
+https://www.pantone.com/eu/en/
+CSS values and units
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units
+CSS Units
+https://www.w3schools.com/cssref/css_units.php
+Incoming: 20 new CSS viewport units
+https://www.terluinwebdesign.nl/en/blog/incoming-20-new-css-viewport-units-svh-lvh-dvh-svw-lvw-dvw/
+MediaQueries.es
+https://web.archive.org/web/20240111080408/https://mediaqueri.es/
+Media queries
+https://en.wikipedia.org/wiki/Media_queries
+Aspect ratio (image)
+https://en.wikipedia.org/wiki/Aspect_ratio_(image)
+16:9 aspect ratio
+https://en.wikipedia.org/wiki/16:9_aspect_ratio
+device-pixel-ratio
+https://cloudinary.com/glossary/device-pixel-ratio
+https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-webkit-device-pixel-ratio

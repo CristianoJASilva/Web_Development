@@ -1,0 +1,11 @@
+investigassem o Bootstrap (https://getbootstrap.com/) 
+e o Tailwind (https://tailwindcss.com/) 
+e percebessem a diferença entre estes dois tipos de frameworks CSS - component-based versus utility classes.
+Investiguem também o pré-processador SASS (especificamente a sintaxe SCSS) (https://sass-lang.com/).
+
+CSS architecture - que organiza as CSS em grandes projectos web para facilitar a escalabilidade e a manutenção desses projectos.
+Ver:
+How to Organize Your CSS with a Modular Architecture (OOCSS, BEM, SMACSS)
+https://snipcart.com/blog/organize-css-modular-architecture
+Modern CSS For Dynamic Component-Based Architecture | Stephanie Eckles | CSS Day 2023
+https://www.youtube.com/watch?v=Y50iqMlrqU8

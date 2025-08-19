@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+</head>
+<body>
+   <!-- os atributo border, cellspacing nao deve ser utilizado em HTML - deve se utilizar css--> 
+  <table border="1" cellspacing="0" cellspacing="10">
+    <caption><strong>Tabela 1</strong> - lista de formandos</caption>
+    <thead>
+        <tr>
+            <!-- th - table header-->
+            <th>Nome</th>
+            <th>Localidade</th>
+            <th>idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- td - table data-->
+            <td>Cristiano</td>
+            <td>Braga</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Andre</td>
+            <td>Porto</td>
+            <td>40</td> 
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total de formandos: 2</td>
+        </tr>
+    </tfoot>
+
+  </table>  
+</body>
+</html>

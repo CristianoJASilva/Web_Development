@@ -1,0 +1,211 @@
+/* ====================================
+Estilo geral do body
+======================================= */
+body {
+    font-family: 'Roboto', sans-serif;       /* Usa a fonte Roboto */
+    line-height: 1.5;                        /* Espaçamento entre linhas 1.5x */
+    margin: 0;                               /* Remove margens exteriores padrão */
+    padding: 0;                              /* Remove preenchimento interior padrão */
+    max-width: 1100px;                       /* Largura máxima do conteúdo: 1100px */
+    margin: auto;                            /* Centraliza horizontalmente na página */
+    padding-top: 20px;        /* um pouco de espaço no topo para a imagem */
+    padding-left: 60px;       /* cria espaço à esquerda para a imagem fixa */
+}
+
+/* ====================================
+Menu de navegação
+======================================= */
+nav ul.menu {
+    list-style: none;                        /* Remove os pontos da lista */
+    display: flex;                           /* Coloca os itens lado a lado */
+    justify-content: flex-end;              /* Alinha os itens à direita */
+    gap: 20px;                               /* Espaçamento entre os itens do menu */
+    padding: 20px;                           /* Espaço interior em volta do menu */
+    margin: 0;                               /* Remove margens padrão */
+}
+
+/* ====================================
+Links do menu
+======================================= */
+nav ul.menu li a {
+    color: black;                            /* Cor preta no texto do link */
+    text-decoration: none;                   /* Remove sublinhado */
+    font-size: 120%;                         /* Tamanho do texto 20% maior que o normal */
+    position: relative;                      /* Permite posicionar pseudo-elementos (linhas) */
+}
+nav ul.menu li a:hover {
+    color: #aaa;                             /* Muda a cor para cinzento claro ao passar o rato */
+}
+nav ul.menu li a:hover::before,
+nav ul.menu li a:hover::after {
+    content: "";                             /* Cria elementos visuais (linhas) */
+    position: absolute;                      /* Posicionamento livre */
+    left: 0;
+    right: 0;
+    height: 1px;                             /* Altura da linha */
+    background: #aaa;                        /* Cor da linha: cinza claro */
+}
+nav ul.menu li a:hover::before {
+    top: 0;                                  /* Linha aparece em cima do link */
+}
+nav ul.menu li a:hover::after {
+    bottom: 0;                               /* Linha aparece em baixo do link */
+}
+
+/* ====================================
+Ícone da lupa
+======================================= */
+nav ul.menu i {
+    font-size: 120%;                         /* Tamanho 120% */
+    cursor: pointer;                         /* Muda cursor para mãozinha */
+}
+nav ul.menu i:hover {
+    color: #aaa;                             /* Muda a cor ao passar o rato */
+}
+
+/* ====================================
+Títulos e autor
+======================================= */
+h1 {
+    font-size: 250%;                         /* Muito maior que o normal */
+    font-weight: bold;                       /* Negrito */
+}
+h2 {
+    font-size: 150%;                         /* 1.5x maior */
+    font-weight: bold;
+}
+.authorInfo {
+    font-size: 12px;                         /* Tamanho pequeno */
+    color: rgb(155, 155, 155);               /* Cor cinza claro */
+}
+
+/* ====================================
+Imagens e legendas
+======================================= */
+img {
+    display: block;                          /* Mostra imagem como bloco (permite centralizar) */
+    margin: auto;                            /* Centraliza horizontalmente */
+    max-width: 100%;                         /* Imagem nunca passa do tamanho do contentor */
+}
+figure {
+    text-align: center;                      /* Centraliza legenda e imagem */
+}
+figcaption {
+    font-style: italic;                      /* Deixa a legenda em itálico */
+}
+/* Estilo específico para a logo do favicon no topo esquerdo */
+.logo-top-left {
+    position: fixed;          /* fixa no topo da página */
+    top: 10px;                /* distância do topo */
+    left: 10px;               /* distância da esquerda */
+    width: 40px;              /* tamanho da imagem (ajuste conforme quiser) */
+    height: auto;
+    z-index: 1000;            /* para ficar acima do resto */
+}
+.logo-top-left img {
+    display: block;
+    margin: 0;
+    max-width: 40px;
+    height: auto;
+}
+
+/* ====================================
+Destaque "Related content"
+======================================= */
+.related {
+    text-align: center;                      /* Centraliza o texto */
+    color: #aaa;                             /* Cor cinza claro */
+    font-size: 200%;                         /* 2x o tamanho normal */
+}
+.related strong {
+    color: black;                            /* Parte "Related content" em negrito preto */
+}
+
+/* ====================================
+Links dentro do texto
+======================================= */
+a.text-link {
+    color: black;                            /* Cor preta como o resto do texto */
+    text-decoration: none;                   /* Sem sublinhado */
+}
+a.text-link:hover {
+    color: #9b9b9b;                          /* Muda a cor ao passar o rato */
+}
+
+/* ====================================
+Linha horizontal
+======================================= */
+hr {
+    border: 1px solid rgb(128, 128, 128);    /* Linha cinza com 1px de espessura */
+}
+
+/* ====================================
+Texto em itálico
+======================================= */
+em {
+    font-style: italic;                      /* Aplica itálico ao texto dentro de <em> */
+}
+
+/* ====================================
+Ícones das redes sociais
+======================================= */
+.social-icons {
+    text-align: center;                      /* Centraliza os ícones */
+    font-size: 150%;                         /* Aumenta tamanho dos ícones */
+    margin: 20px 0;                          /* Espaço acima e abaixo */
+}
+.social-icons a {
+    color: black;                            /* Cor preta */
+    text-decoration: none;                   /* Sem sublinhado */
+    margin: 0 10px;                          /* Espaço entre os ícones */
+}
+.social-icons a:hover {
+    color: blue;                             /* Muda a cor para azul no hover */
+}
+
+/* ====================================
+Rodapé (footer)
+======================================= */
+footer {
+    margin-top: 40px;                        /* Espaço acima do footer */
+}
+footer input[type="text"] {
+    width: 100%;                             /* Campo de pesquisa ocupa largura total */
+    height: 30px;                            /* Altura do campo */
+    margin-bottom: 20px;                     /* Espaço abaixo do campo */
+}
+footer h3 {
+    font-size: 120%;                         /* Título do footer um pouco maior */
+}
+footer a {
+    color: black;                            /* Links pretos */
+    text-decoration: none;                   /* Sem sublinhado */
+}
+footer a:hover {
+    text-decoration: underline;              /* Sublinhado ao passar o rato */
+}
+
+/* ====================================
+Rodapé - Colunas de categorias
+======================================= */
+.footer-columns {
+    display: flex;                           /* Exibe colunas lado a lado */
+    flex-wrap: wrap;                         /* Permite quebra de linha se necessário */
+    justify-content: space-between;         /* Espaço entre colunas */
+    padding: 20px 0;                         /* Espaço vertical */
+    gap: 20px;                               /* Espaço entre colunas */
+}
+.footer-section {
+    flex: 1 1 180px;                         /* Largura mínima de cada coluna */
+}
+.footer-section ul {
+    list-style: none;                        /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+.footer-section ul li {
+    margin-bottom: 6px;                      /* Espaço entre links */
+}
+
+
+

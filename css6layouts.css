@@ -1,0 +1,115 @@
+/* ====================================
+Estilos genéricos
+======================================= */
+/* universal selector - é aplicado a todos os elementos da página */
+* {
+    /* box-sizing: border-box; */
+}
+
+body {
+    /* width: 1200px; */
+    max-width: 1200px;
+    /* por omissão o elemento body tem 8px de margin a toda a volta */
+    /* margin: 0 auto; */
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* p {
+    text-align: center;
+} */
+
+/* ====================================
+Menu principal
+======================================= */
+
+/* #menuPrincipal ul { */
+#menuPrincipal > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid #000;
+}
+
+/* #menuPrincipal > ul > li { */
+#menuPrincipal li {
+    display: inline-block;
+}
+/* #menuPrincipal > ul > li > a { */
+#menuPrincipal a {
+    color: black;
+    /* text-decoration: overline underline; */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+/* :hover - quando se passa o rato por cima de um link */
+#menuPrincipal a:hover {
+    color: white;
+    background-color: red;
+}
+/*
+pseudo-classes que podemos associar a um link
+
+:link - link não visitado
+:visited - link visitado
+:hover - rato por cima
+:active - rato por cima a clicar no botão
+:focus - quando o link está "seleccionado"
+
+*/
+
+
+/* ====================================
+Secção Internacional
+======================================= */
+
+#internacional {
+    display: flex;
+    /* por omissão, o valor da propriedade "align-items" é "stretch" */
+    /* align-items: flex-start; */
+    /* Para poder ter mais de uma linha de layout com o flexbox */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#internacional > section {
+    box-sizing: border-box;
+    /* layout de 3 colunas */
+    /* width: 33.33%; */
+    /* width: 50%; */
+    /* width: calc(50% - 40px - 2px); */
+    /* flex: 1 significa que todas as colunas devem ter a mesma largura */
+    /* flex: 1; */
+    /* flex: flex-grow flex-shrink flex-basis */
+    /* flex: 0 1 50%; */
+    flex: 0 1 calc(50% - 10px);
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+/* ====================================
+Secção Artes
+======================================= */
+
+#artes {
+    display: flex;
+    column-gap: 30px;
+}
+#artes > section {
+    box-sizing: border-box;
+}
+/* #artes > :first-child, #artes > :last-child { */
+#artes > :nth-child(1), #artes > :nth-child(3) {
+    /* background-color: red; */
+    /* width: 25%; */
+    flex: 1;
+    /* order: 2; */
+}
+#artes > :nth-child(2) {
+    /* background-color: blue; */
+    /* width: 50%; */
+    flex: 2;
+    order: -1;
+    /* order: 0; */
+}

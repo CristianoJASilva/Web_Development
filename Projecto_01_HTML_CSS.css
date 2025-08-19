@@ -465,7 +465,7 @@ COOKIES
 }
 
 /* Botão aceitar */
-.cookie-btn {
+.cookie-boton {
   display: inline-block;
   padding: 10px 24px;
   background: #f16248;
@@ -477,7 +477,7 @@ COOKIES
   cursor: pointer;
   transition: all .2s ease;
 }
-.cookie-btn:hover {
+.cookie-boton:hover {
   background: #f5f5f5;
   color: #f16248;
   border-color: #f16248;

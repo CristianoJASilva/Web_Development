@@ -83,7 +83,7 @@ nav .menu a:hover{ color:#0075be; }
 }
 
 @media (max-width:800px){
-  .menu-icon{ display:inline-block; }     /* mostra o hambúrguer */
+  .menu-icon{ display:inline-block; }     /* mostra o menu hambúrguer */
 
   nav .menu{
     display:none;                      

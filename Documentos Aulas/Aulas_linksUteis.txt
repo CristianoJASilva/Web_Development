@@ -167,3 +167,70 @@ https://en.wikipedia.org/wiki/16:9_aspect_ratio
 device-pixel-ratio
 https://cloudinary.com/glossary/device-pixel-ratio
 https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-webkit-device-pixel-ratio
+
+
+
+8ª Sessão
+
+State of CSS
+https://2025.stateofcss.com/en-US/
+https://2025.stateofcss.com/en-US/other-tools/#css_frameworks
+Roadmap
+https://roadmap.sh/frontend
+Bootstrap
+https://getbootstrap.com/
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+https://getbootstrap.com/docs/5.3/getting-started/download/
+Bootstrap free themes
+https://startbootstrap.com/
+Outras frameworks CSS
+Zurb Foundation
+https://get.foundation/
+Bulma
+https://bulma.io/
+Materialize
+https://materializeweb.com/
+22 Best Bootstrap Alternatives Reviewed in 2025
+https://thectoclub.com/tools/bootstrap-alternative/
+Tailwind
+https://tailwindcss.com/
+Top 5 Free Tailwind Component Libraries
+https://strapi.io/blog/tailwind-component-libraries
+10 Free Tailwind CSS UI Kits & Component Libraries 2024
+https://daily.dev/blog/10-free-tailwind-css-ui-kits-and-component-libraries-2024
+Flowbite - Tailwind CSS component library
+https://flowbite.com/
+TailGrids
+https://tailgrids.com/components
+daisyUI
+https://daisyui.com/
+Minify JS / CSS - JavaScript and CSS Minifier / Compressor
+https://www.minifier.org/
+
+
+
+9ª Sessão
+
+Flowbite - Quickstart
+https://flowbite.com/docs/getting-started/quickstart/
+Pre-processors
+https://2025.stateofcss.com/en-US/other-tools/#pre_post_processors
+SASS/SCSS
+https://sass-lang.com/
+Chrome default stylesheet
+https://gist.github.com/ambidexterich/34828a904dd97dd2a345
+https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/html/resources/html.css
+Eric Meyer Reset CSS
+https://meyerweb.com/eric/tools/css/reset/
+Normalize.css
+https://necolas.github.io/normalize.css/
+sanitize.css
+https://csstools.github.io/sanitize.css/
+Bootstrap Reboot
+https://getbootstrap.com/docs/5.3/content/reboot/
+2025.stateofcss.com
+sass-lang.comsass-lang.com
+Sass: Syntactically Awesome Style Sheets
+Syntactically Awesome Style Sheets
+source.chromium.orgsource.chromium.org
+Search and explore code

@@ -234,3 +234,17 @@ Sass: Syntactically Awesome Style Sheets
 Syntactically Awesome Style Sheets
 source.chromium.orgsource.chromium.org
 Search and explore code
+
+
+1ª Sessão JavaScript
+
+JavaScript Guide
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+JavaScript reference
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+JavaScript Reserved Words
+https://www.w3schools.com/js/js_reserved.asp
+Modulo Operator
+https://en.wikipedia.org/wiki/Modulo
+JavaScript String Methods
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String

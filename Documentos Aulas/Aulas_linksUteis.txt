@@ -248,3 +248,18 @@ Modulo Operator
 https://en.wikipedia.org/wiki/Modulo
 JavaScript String Methods
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+
+
+2ª Sessão
+
+Benchmarking JavaScript
+https://jsbench.me/
+JavaScript Array Methods
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+8 Common JavaScript Data Structures
+https://builtin.com/software-engineering-perspectives/javascript-data-structures
+Data Structures in JavaScript – With Code Examples
+https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/
+Neo4J
+https://neo4j.com/ (edited) 

@@ -263,3 +263,14 @@ Data Structures in JavaScript – With Code Examples
 https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/
 Neo4J
 https://neo4j.com/ (edited) 
+
+
+
+3ª Sessão
+
+Docker
+https://www.docker.com/
+Falsy
+https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+What are Falsy Values in JavaScript? Explained with Examples
+https://www.freecodecamp.org/news/what-are-falsey-values-in-javascript/

@@ -274,3 +274,14 @@ Falsy
 https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 What are Falsy Values in JavaScript? Explained with Examples
 https://www.freecodecamp.org/news/what-are-falsey-values-in-javascript/
+
+
+
+4ª Sessão
+
+JS Libraries
+https://2024.stateofjs.com/en-US/other-tools/#libraries
+JavaScript utility libraries
+https://lodash.com/
+https://underscorejs.org/
+https://ramdajs.com/

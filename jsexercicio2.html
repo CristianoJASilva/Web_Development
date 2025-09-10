@@ -23,8 +23,22 @@
 
         let frase="Exemplo de uma frase com palavras";
 
-        let palavras=frase.split(" "); // 
-        console.log(palavras); // ["Exemplo", "de", ...];
+        // let palavras=frase.split(" ");
+        // percorrer o array
+        let palavras=[];
+        let posInicio=0;
+        let pos=0;
+        while (pos<frase.length) {
+            if (frase.charAt(pos)===" ") {
+                let palavra=frase.slice(posInicio,pos);
+                palavras.push(palavra);
+                posInicio=pos+1;
+            }
+            pos++;
+        }
+        let palavra=frase.slice(posInicio);
+        palavras.push(palavra);
+        console.log(palavras); // ['Exemplo', 'de', 'uma', 'frase', 'com', 'palavras'];
         let palavraMaior="";
         for (let palavra of palavras) {
             if (palavra.length>palavraMaior.length) {

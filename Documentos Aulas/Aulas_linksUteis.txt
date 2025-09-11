@@ -285,3 +285,26 @@ JavaScript utility libraries
 https://lodash.com/
 https://underscorejs.org/
 https://ramdajs.com/
+
+
+
+5ª Sessão
+
+SOLID
+https://en.wikipedia.org/wiki/SOLID
+Single-responsibility principle
+https://en.wikipedia.org/wiki/Single-responsibility_principle
+Code refactoring
+https://en.wikipedia.org/wiki/Code_refactoring
+Livros do robert c. martin
+https://www.amazon.com/s?k=robert+c.+martin&crid=37M4GHIM0BFLM&sprefix=robert+c.+marti%2Caps%2C179&ref=nb_sb_noss_2
+Design pattern
+https://en.wikipedia.org/wiki/Design_pattern
+https://en.wikipedia.org/wiki/Design_Patterns
+Livros sobre Design Patterns
+Design Patterns: Elements of Reusable Object-Oriented Software
+Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software 2nd Edition
+Anti-pattern
+https://en.wikipedia.org/wiki/Anti-pattern
+Livro sobre OOP
+OOP Demystified (edited) 

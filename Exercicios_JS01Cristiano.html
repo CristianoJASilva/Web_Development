@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicios JavaScript</title>
+  </head>
+  <body>
+    <script>
+      /* ====================================
+        Exercício JS 1
+      =================================== */
+
+      /* Gerar uma chave aleatória do euromilhões (5 números + 2 estrelas) - não podem existir números repetidos!
+         Os números podem variar entre 1 e 50, e as estrelas entre 1 e 12. */
+
+      // Arrays para guardar os números
+      let numeros = [];
+      let estrelas = [];
+
+      // Gerar 5 números únicos entre 1 e 50
+      while (numeros.length < 5) {
+        let n = Math.floor(Math.random() * 50) + 1;
+        if (!numeros.includes(n)) {
+          numeros.push(n);
+        }
+      }
+
+      // Gerar 2 estrelas únicas entre 1 e 12
+      while (estrelas.length < 2) {
+        let e = Math.floor(Math.random() * 12) + 1;
+        if (!estrelas.includes(e)) {
+          estrelas.push(e);
+        }
+      }
+
+      console.log("Números: " + numeros.join(", "));
+      console.log("Estrelas: " + estrelas.join(", "));
+
+      /* ====================================
+        Exercício JS 2
+      =================================== */
+
+      /* Identificar a maior palavra existente numa frase e o respetivo número de caracteres.
+         Para a seguinte string,
+         let frase = "Exemplo de uma frase com palavras";
+         o resultado deve ser:
+         "palavras" - 8 letras
+         Podem utilizar métodos de strings de JavaScript. */
+
+      let frase = "Exemplo de uma frase com palavras";
+
+      // let palavras = frase.split(" ");
+      // percorrer o array
+      let palavras = [];
+      let posInicio = 0;
+      let pos = 0;
+
+      while (pos < frase.length) {
+        if (frase.charAt(pos) === " ") {
+          let palavra = frase.slice(posInicio, pos);
+          palavras.push(palavra);
+          posInicio = pos + 1;
+        }
+        pos++;
+      }
+
+      let palavra = frase.slice(posInicio);
+      palavras.push(palavra);
+
+      console.log(palavras); // ['Exemplo', 'de', 'uma', 'frase', 'com', 'palavras'];
+
+      let palavraMaior = "";
+      for (let palavra of palavras) {
+        if (palavra.length > palavraMaior.length) {
+          palavraMaior = palavra;
+        }
+      }
+
+      console.log(`${palavraMaior} - ${palavraMaior.length} letras`);
+
+      /* ====================================
+        Exercício JS 3
+      =================================== */
+
+      /* Contar o número de palavras existentes numa string.
+         Para a string,
+         let frase = "Exemplo de uma frase com palavras";
+         o resultado deve ser 6.
+         Podem resolver o exercício utilizando métodos disponíveis no JavaScript,
+         mas também terão de resolver o exercício sem esses métodos. */
+
+      /* ====================================
+        Exercício JS 4
+      =================================== */
+
+      /* Remover os números repetidos de um array.
+      Por exemplo, partindo do array,
+      [12,6,3,12,8,6,5]
+      o resultado é:
+      [12,6,3,8,5]
+      Poderá remover os números repetidos do próprio array ou criar um novo array com os valores não repetidos. */
+
+      const numbers = [12, 6, 3, 12, 8, 6, 5];
+      // numbers=[23,12]; // Uncaught TypeError: Assignment to constant variable.
+      numbers.push(34);
+      numbers.splice(7, 1);
+      console.log(numbers); // [12, 6, 3, 12, 8, 6, 5]
+
+      function removeRepeatedValues(arrNumbers) {
+        let newArray = [];
+
+        for (let i = 0; i < arrNumbers.length; i++) {
+          if (!newArray.includes(arrNumbers[i])) {
+            newArray.push(arrNumbers[i]);
+          }
+        }
+
+        return newArray;
+      }
+      const nonRepeatedValuesArray = removeRepeatedValues(numbers);
+      console.log(nonRepeatedValuesArray); // [12, 6, 3, 8, 5]
+
+      const withoutRepeatedValues = new Set(numbers);
+      console.log(withoutRepeatedValues); // Set(5) {12, 6, 3, 8, 5}
+      // converter o Set para um Array
+      const nonRepeatedValuesArray2 = [...withoutRepeatedValues];
+      console.log(nonRepeatedValuesArray2); // [12, 6, 3, 8, 5]
+
+      const nonRepeatedValuesArray3 = [...new Set(numbers)];
+      console.log(nonRepeatedValuesArray3); // [12, 6, 3, 8, 5]
+    </script>
+  </body>
+</html>

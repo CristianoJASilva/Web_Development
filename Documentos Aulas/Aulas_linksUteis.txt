@@ -308,3 +308,30 @@ Anti-pattern
 https://en.wikipedia.org/wiki/Anti-pattern
 Livro sobre OOP
 OOP Demystified (edited) 
+
+
+
+6" Sessao
+
+Inheritance (object-oriented programming)
+https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+Epoch (computing)
+https://en.wikipedia.org/wiki/Epoch_(computing)
+Date
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+Intl
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl
+RangeError: invalid date
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_date
+SQL Server Reporting Services
+https://en.wikipedia.org/wiki/SQL_Server_Reporting_Services
+SQL Server Integration Services
+https://en.wikipedia.org/wiki/SQL_Server_Integration_Services
+Microsoft Analysis Services
+https://en.wikipedia.org/wiki/Microsoft_Analysis_Services
+JavaScript handbook
+https://flaviocopes.pages.dev/books/js-handbook.pdf
+Livro sobre JavaScript:
+https://eloquentjavascript.net/
+Site com informação sobre JavaScript
+https://javascript.info/

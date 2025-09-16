@@ -1,0 +1,264 @@
+Exercício JS 1
+Gerar uma chave aleatória do euromilhões (5 números + 2 estrelas) - não podem existir números repetidos!
+Os números podem variar entre 1 e 50, e as estrelas entre 1 e 12.
+1:57
+
+
+Exercício JS 2
+Identificar a maior palavra existente numa frase e o respectivo número de caracteres.
+Para a seguinte string,
+let frase="Exemplo de uma frase com palavras";
+o resultado deve ser:
+"palavras" - 8 letras
+Podem utilizar métodos de strings de JavaScript. (edited) 
+1:59
+
+
+Exercício JS 3
+Contar o número de palavras existentes numa string .
+Para a string,
+let frase="Exemplo de uma frase com palavras";
+o resultado deve ser 6.
+Podem resolver o exercício utilizando métodos disponíveis no JavaScript, mas também terão de resolver o exercício sem esses métodos.
+1:59
+
+
+Exercício JS 4
+Remover os números repetidos de um array.
+Por exemplo, partindo do array,
+[12,6,3,12,8,6,5]
+o resultado é:
+[12,6,3,8,5]
+Poderá remover os números repetidos do próprio array ou criar um novo array com os valores não repetidos.
+2:01
+
+
+Exercício JS 5
+Valide o conteúdo de uma string de forma a permitir apenas letras maiúsculas, letras minúsculas e espaços. Todos os outros caracteres devem ser removidos da string.
+2:02
+
+
+Exercício JS 6
+Dada uma variável com um ano,
+let ano=2004;
+determinar se o ano é bissexto.
+Ver imagem anexa.
+image.png
+ 
+image.png
+2:03
+
+
+Exercício JS 7
+Apresentar os números de 1 a 100 com as seguintes restrições:
+Se o número for múltiplo de 3, escrever Fizz em vez do número;
+Se o número for múltiplo de 5, escrever Buzz em vez do número;
+Se o número for múltiplo de 3 e de 5, escrever FizzBuzz em vez do número;
+Exemplo de resultado:
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+..
+2:04
+
+
+Exercício JS 8
+Dada uma variável do tipo string, validar se obedece às seguintes condições, apresentando uma mensagem de erro:
+não pode ser vazia
+tem de ter, no mínimo, 3 caracteres
+o primeiro caracter tem de ser A ou B
+Utilizar os seguintes valores para testar:
+let valor1=""; // false
+let valor2="Primavera"; // false
+let valor3="Be"; // false;
+let valor4="Amesterdão"; // true
+let valor5="Benin"; // true
+2:05
+
+
+Exercício JS 9
+Calcular os números primos entre 1 e um número definido por uma variável:
+let limite=30;
+Neste caso, seriam calculados os números primos entre 1 e 30.
+Um número primo apenas é divisível por 1 e por si próprio.
+2:08
+
+
+Exercício JS 10
+Dadas duas strings, identificar os caracteres que não são comuns às duas strings.
+Exemplo:
+let valor1="xyab";
+let valor2="xzca"
+O resultado é "ybzc".
+2:11
+
+
+Exercício JS 11
+Remova todos os espaços de uma string.
+Exemplo:
+let valor="  Exemplo de uma string  ";
+O resultado deve ser:
+"Exemplodeumastring"
+
+
+Resolva o exercício sem recorrer a métodos internos do JavaScript e depois resolva o pexercício utilizando métodos do JavaScript.
+
+
+Exercício JS 12
+Coloque em maiúsculas as iniciais de cada palavra de uma string. Todas as outras letras devem aparecer em minúsculas.
+Exemplo:
+let valor="EXEMPLO de UMA string";
+O resultado deve ser:
+Exemplo De Uma String
+
+
+
+Exercício JS 13
+
+Crie uma função chamada repeatString, que permita simular o método repeat das strings.
+A função, deve ter dois parâmetros:
+O número de repetições
+O texto/string a repetir
+Exemplo:
+function repeatString(text,repetitions) {
+Se invocarmos esta função da seguinte forma,
+repeatString ("Primavera",3);
+O resultado será:
+PrimaveraPrimaveraPrimavera
+Testar e validar a função para valores diferentes das variáveis "repetições" e "texto" – por exemplo, o que acontece se não passarmos nenhum parâmetro ou se passarmos um número como primeiro parâmetro, etc. (edited) 
+
+
+
+Exercício JS 14
+
+Ver o seguinte vídeo até aos 2:31m. Parar o vídeo e resolver o exercício.
+How to: Work at Google — Example Coding/Engineering Interview
+https://www.youtube.com/watch?v=XKu_SEDAykw&t=196s
+Ver depois o vídeo até ao fim e tentar perceber as outras soluções apresentadas.
+
+
+
+Exercício JS 15
+
+Criar uma função que simule o método substring
+O parâmetro 'fim' é opcional - se não for passado para a função é retornada a substring entre o valor do parâmetro "inicio" e o fim da string
+Testar também se os parâmetros são passados (pelo menos os dois primeiros). Caso isso não aconteça retornar null ou undefined
+function extrair(valorString,inicio,fim) {
+    return "";
+}
+console.log(extrair("Pedro Remoaldo,0,5)); // Pedro
+
+
+Exercício JS 16
+
+Dado um array com números,
+let dados = [90,190,20,240,340,220,470,60,430,460,400];
+ordená-los por ordem crescente sem recorrer ao método sort(). Investigue o algoritmo bubble sorting.
+Ver imagem em anexo para perceber o funcionamento do bubble sorting.
+
+
+
+Exercício JS 17
+
+Sem recorrer ao método toUpperCase() converta uma string para maiúsculas. Crie uma função, convertToUpperCase() , que efectue esta operação.
+Exemplo, fornecendo a seguinte variável,
+let convertedString = convertUpperCase("Pedro Remoaldo");
+o resultado deve ser:
+
+
+Exercício JS 18
+
+No exercício de temperaturas, calcular a mediana, que representa o valor central de um conjunto de dados.
+Para encontrar o valor da mediana é necessário colocar os valores em ordem crescente ou decrescente.
+Quando o número de elementos de um conjunto é par, a mediana é encontrada pela média dos dois valores centrais. Assim, esses valores são somados e divididos por dois.
+
+
+
+Exercício JS 19
+
+Criar uma função, extraiExtensao, que recebe como parâmetro o nome de um ficheiro,
+function extraiExtensao(nomeFicheiro) {
+e que devolve a extensão do ficheiro.
+Por exemplo:
+let resultado=extraiExtensao("teste.txt");
+O valor da variável resultado deve ser ".txt" ou "txt". No caso de ser um ficheiro Word seria "docx" ou ".docx".
+Convém testar, dentro da função, todas as hipóteses para a variável "ficheiro". Por exemplo, se não existe extensão, se a variável está vazia, se não contém uma string, etc.
+
+
+
+Exercício JS 20
+
+Partindo do seguinte array de objectos,
+let pessoas=[
+ { nome: "Pedro Remoaldo", localidade: "Ermesinde" },
+ { nome: "Luísa Xavier", localidade: "Lisboa"},
+ { nome: "Mário Simões", localidade: "Aveiro"},
+ { nome: "Joana Castro", localidade: "Santa Maria da Feira"},
+ { nome: "Guilherme Silveira", localidade: "Lisboa"},
+ { nome: "Pedro Oliveira", localidade: "Ermesinde"}
+]
+Criar um novo array com as localidades de cada pessoa, mas não permitindo a existência de localidades repetidas.
+O resultado deverá aparecer ordenado por ordem alfabética:
+["Aveiro","Ermesinde","Lisboa","Santa Maria da Feira"]
+Desenhar o algoritmo de forma que funcione para qualquer número de pessoas.
+
+
+
+Exercício JS 21
+
+Partindo do seguinte array de objectos,
+let pessoas=[
+ { nome: "Pedro Remoaldo", localidade: "Ermesinde" },
+ { nome: "Luísa Xavier", localidade: "Lisboa"},
+ { nome: "Mário Simões", localidade: "Aveiro"},
+ { nome: "Joana Castro", localidade: "Santa Maria da Feira"},
+ { nome: "Guilherme Silveira", localidade: "Lisboa"},
+ { nome: "Pedro Oliveira", localidade: "Ermesinde"}
+]
+Faça a ordenação do array pelo nome de cada pessoa. O resultado deverá ser:
+[
+   {nome: 'Guilherme Silveira', localidade: 'Lisboa'}
+   {nome: 'Joana Castro', localidade: 'Santa Maria da Feira'}
+   {nome: 'Luísa Xavier', localidade: 'Lisboa'}
+   {nome: 'Mário Simões', localidade: 'Aveiro'}
+   {nome: 'Pedro Oliveira', localidade: 'Ermesinde'}
+   {nome: 'Pedro Remoaldo', localidade: 'Ermesinde'}
+]
+
+
+
+Exercício JS 22
+
+Partindo da solução do exercício anterior, crie uma função que permita ordenar um array de objectos, passando o nome da propriedade de ordenação.
+Exemplo:
+function sortObjectsArray(arrayName,propertyName)
+Invocando esta função da seguinte forma,
+sortObjectsArray(pessoas,"nome")
+Teremos o mesmo resultado que o do exercício anterior.
+
+
+
+Exercício JS 23
+
+Dado um array de objectos com uma lista de compras, calcular o total de euros gasto na compra de livros:
+let compras = [
+    { artigo: "Livros", preco: 15 },
+    { artigo: "Roupa", preco: 230 },
+    { artigo: "Confeitaria", preco: 8 },
+    { artigo: "Roupa", preco: 125 },
+    { artigo: "Livros", preco: 25 },
+    { artigo: "Livros", preco: 45 },
+]
+Neste caso, o total deverá ser igual a 85€, resultante de 3 compras.

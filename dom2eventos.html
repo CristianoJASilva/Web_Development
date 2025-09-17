@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos na DOM API</title>
-    <style>
-      .novaAparencia {
-        background-color: red;
-        color: white;
-        font-size: 3rem;
-      }
-    </style>
+    <link rel="stylesheet" href="dom2eventos.css" />
   </head>
   <body>
     <h1>Eventos</h1>
     <p><button type="button" id="btMuda">Muda o título</button></p>
+
+    <p>
+      <button type="button" id="btCollapse">Mostra</button>
+      <!-- <button type="button" id="btCollapseEsconde">Esconde</button> -->
+    </p>
+    <section class="collapseContent hide">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+        consequuntur natus rem nulla tenetur? Autem deleniti unde, sunt nostrum
+        voluptas quo sapiente neque! Eum sequi officiis aliquid qui, accusamus
+        porro.
+      </p>
+    </section>
     <script src="dom2eventos.js"></script>
   </body>
 </html>

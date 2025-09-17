@@ -335,3 +335,59 @@ Livro sobre JavaScript:
 https://eloquentjavascript.net/
 Site com informação sobre JavaScript
 https://javascript.info/
+
+
+
+7ª Sessão
+
+Date Libraries
+What Is the Best JavaScript Date and Time Library?
+https://phrase.com/blog/posts/best-javascript-date-time-libraries/
+The best JavaScript date libraries in 2021
+https://www.skypack.dev/blog/2021/02/the-best-javascript-date-libraries/
+Best JavaScript Date and Time Libraries
+https://code.tutsplus.com/best-date-and-time-libraries-in-javascript--cms-107290a
+Introducing Tempo • A new date library for JavaScript (and TypeScript)
+https://dev.to/justinschroeder/introducing-tempo-a-new-date-library-for-javascript-and-typescript-359a
+Luxon
+https://moment.github.io/luxon/
+Luxon examples
+https://moment.github.io/luxon/demo/global.html
+Install Guide
+https://moment.github.io/luxon/#/install
+DOM JS libraries
+jQuery
+Mootools
+ExtJS
+Prototype/Script.aculo.us
+YUI
+Dojo Toolkit
+You might not need jQuery
+https://youmightnotneedjquery.com/
+Document Object Model
+https://en.wikipedia.org/wiki/Document_Object_Model
+Browser: Document, Events, Interfaces
+https://javascript.info/ui
+DOM events
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events
+The JavaScript DOM Manipulation Handbook
+https://www.freecodecamp.org/news/the-javascript-dom-manipulation-handbook/ (edited) 
+
+
+
+8ª Sessão
+
+Document Object Model (DOM)
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+The HTML DOM API
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+DOM scripting introduction
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting
+Lightbox
+https://lokeshdhakar.com/projects/lightbox2/
+Event: stopPropagation() method
+https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
+Event bubbling
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Event_bubbling
+Event Bubbling in JavaScript – How Event Propagation Works with Examples
+https://www.freecodecamp.org/news/event-bubbling-in-javascript/

@@ -1,0 +1,18 @@
+.accordion {
+  width: 400px;
+}
+.accordion > h2 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  user-select: none;
+  cursor: pointer;
+}
+.accordion > section {
+  border: 1px solid #000;
+  padding: 20px;
+}
+.hide {
+  display: none;
+}

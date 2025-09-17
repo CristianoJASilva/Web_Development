@@ -1,0 +1,13 @@
+.novaAparencia {
+  background-color: red;
+  color: white;
+  font-size: 3rem;
+}
+.collapseContent {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+.hide {
+  display: none;
+}

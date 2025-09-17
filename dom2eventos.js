@@ -51,3 +51,35 @@ const elButton = document.querySelector("#btMuda");
 elButton.addEventListener("click", function () {
   titulo.classList.add("novaAparencia");
 });
+
+// let elCollapseContent=document.querySelectorAll(".collapseContent")[0];
+function toggleContent() {
+  // let elCollapseContent=elBtCollapse.parentElement.nextElementSibling;
+  // this - referencia o elemento no qual ocorreu o evento
+  let elCollapseContent = this.parentElement.nextElementSibling;
+  // console.log(elCollapseContent);
+
+  // ler o valor da propriedade "display" definido em CSS
+  // let displayValue=window.getComputedStyle(elCollapseContent).getPropertyValue("display");
+  // // console.log(displayValue);
+  // // if (elCollapseContent.style.display==="block") {
+  // if (displayValue==="block") {
+  //     elCollapseContent.style.display="none";
+  // } else {
+  //     elCollapseContent.style.display="block";
+  // }
+
+  if (elCollapseContent.classList.contains("hide")) {
+    // esconde
+    elCollapseContent.classList.remove("hide");
+    elBtCollapse.textContent = "Esconde";
+  } else {
+    // mostra
+    elCollapseContent.classList.add("hide");
+    elBtCollapse.textContent = "Mostra";
+  }
+
+  // elCollapseContent.classList.toggle("hide");
+}
+const elBtCollapse = document.getElementById("btCollapse");
+elBtCollapse.addEventListener("click", toggleContent);

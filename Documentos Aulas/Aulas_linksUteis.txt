@@ -391,3 +391,13 @@ Event bubbling
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Event_bubbling
 Event Bubbling in JavaScript – How Event Propagation Works with Examples
 https://www.freecodecamp.org/news/event-bubbling-in-javascript/
+
+
+
+9ª Sessão
+
+vertical-align
+https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+Attribute selectors
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Attribute_selectors

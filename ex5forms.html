@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms em HTML</title>
+  </head>
+  <body>
+    <h1>Registo de utilizador</h1>
+    <!-- action - The URI of a program that processes the form information. -->
+    <form action="processForm.aspx">
+      <p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" />
+      </p>
+      <p>
+        <label>Morada: <input type="text" id="morada" /></label>
+      </p>
+      <p>
+        <label
+          >Código Postal: <input type="text" id="cp1" />-<input
+            type="text"
+            id="cp2" />
+          <input type="text" id="cp_localidade"
+        /></label>
+
+        <!-- <label for="cp">Código Postal:</label>
+            <input type="text" id="cp" name="cp"> -->
+      </p>
+      <p>
+        <label for="pais">País</label>
+        <select id="pais">
+          <option value="">-- Escolha um país --</option>
+          <!-- <option value="pt">Portugal</option> -->
+          <option value="Portugal">Portugal</option>
+          <option value="Angola">Angola</option>
+          <option value="Cabo Verde" selected>Cabo Verde</option>
+        </select>
+      </p>
+      <p>
+        Género:
+        <input type="radio" name="genero" id="masculino" value="M" checked />
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="feminino" value="F" />
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="outro" value="O" />
+        <label for="outro">Outro</label>
+        <input type="text" id="outroGenero" name="outroGenero" disabled />
+      </p>
+      <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" name="hobbies" id="xadrez" value="xadrez" />
+        <label for="xadrez">Xadrez</label>
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="viajar"
+          value="viajar"
+          checked
+        />
+        <label for="viajar">Viajar</label>
+        <input type="checkbox" name="hobbies" id="cinema" value="cinema" />
+        <label for="cinema">Cinema</label>
+      </fieldset>
+      <p>
+        <input type="submit" value="Criar utilizador" />
+      </p>
+    </form>
+  </body>
+</html>

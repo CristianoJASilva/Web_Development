@@ -401,3 +401,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
 Attribute selectors
 https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Attribute_selectors
+
+
+
+10ª Sessão
+
+resize
+https://developer.mozilla.org/en-US/docs/Web/CSS/resize
+Regular Expressions
+https://www.regular-expressions.info/refflavors.html
+https://regex101.com/
+https://regexr.com/
+keyup event
+https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event
+input event
+https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event

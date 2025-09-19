@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -45,18 +48,19 @@ body {
 #modal img {
   max-height: 80vh;
   max-width: 80vw;
+  vertical-align: bottom;
 }
 .closeButton {
   position: absolute;
   top: -12px;
   right: -12px;
   background-color: white;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #999;
+  width: 28px;
+  height: 28px;
+  border: 4px solid #999;
   border-radius: 50%;
   text-align: center;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: bold;
   box-shadow: 3px 3px 5px #000;
   cursor: pointer;
@@ -68,6 +72,33 @@ body {
 }
 .closeButton:active {
   box-shadow: none;
-  top: -9px;
-  right: -15px;
+  top: -7px;
+  right: -17px;
+}
+#legenda {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: calc(100% - 40px);
+}
+#leftArrow,
+#rightArrow {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#leftArrow {
+  left: 40px;
+}
+#rightArrow {
+  right: 40px;
 }

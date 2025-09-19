@@ -1,105 +1,75 @@
-* {
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.galeria {
-    text-align: center;
-}
-.galeria > img {
-    width: 200px;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: transform 0.5s;
-}
-.galeria > img:hover {
-    opacity: 1;
-    transform: scale(1.5);
+let imagesList = document.querySelectorAll(".galeria > img");
+let elModal = document.querySelector("#modal");
+let elCloseButton = document.querySelector("#modal span");
+const elBigImage = document.querySelector("#modal img");
+const elLegenda = document.querySelector("#legenda");
+const elLeftArrow = document.querySelector("#leftArrow");
+const elRightArrow = document.querySelector("#rightArrow");
+const firstImage = imagesList[0];
+const lastImage = imagesList[imagesList.length - 1];
+
+let currentImage;
+
+for (let image of imagesList) {
+  image.addEventListener("click", function () {
+    elModal.style.display = "grid";
+    // let image=this.src; // http://127.0.0.1:5500/galeria/Koala.jpg
+    // método mais moderno
+    // let imageReference=this.getAttribute("src"); // galeria/Hydrangeas.jpg
+    // console.log(imageReference); // galeria/Jellyfish.jpg
+    // elBigImage.setAttribute("src",imageReference);
+    // elLegenda.textContent=this.getAttribute("alt");
+
+    // for (let image of imagesList) {
+    //     if (image.getAttribute("src")===imageReference) {
+    //         currentImage=image;
+    //         break;
+    //     }
+    // }
+    // currentImage=document.querySelector("[src='"+imageReference+"']");
+    // currentImage=this;
+    // console.log(currentImage);
+    changeImage(this);
+  });
 }
 
-#modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* right: 0;
-    bottom: 0; */
-    background-color: rgb(0,0,0,0.5);
-    /* width: 100%; */
-     /* vw - viewport width */
-    width: 100vw;
-    height: 100vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* display: grid; */
-    display: none;
-    place-items: center;
-    
-}
-#modalContent {
-    /* position: fixed; */
-    background-color: white;
-    padding: 20px;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
-    position: relative;
-}
-#modal img {
-    max-height: 80vh;
-    max-width: 80vw;
-    vertical-align: bottom;
-}
-.closeButton {
-    position: absolute;
-    top: -12px;
-    right: -12px;
-    background-color: white;
-    width: 28px;
-    height: 28px;
-    border: 4px solid #999;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 22px;
-    font-weight: bold;
-    box-shadow: 3px 3px 5px #000;
-    cursor: pointer;
-    user-select: none;
-}
-.closeButton:hover {
-    background-color: #999;
-    color: white;
-}
-.closeButton:active {
-    box-shadow: none;
-    top: -7px;
-    right: -17px;
-}
-#legenda {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    padding: 10px 20px;
-    background-color: rgba(0,0,0,0.4);
-    color: white;
-    width: calc(100% - 40px);
-}
-#leftArrow, #rightArrow {
-    position: absolute;
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
-    top: 50%;
-    transform: translateY(-50%);
-}
-#leftArrow {
-    left: 40px;
+elCloseButton.addEventListener("click", function () {
+  elModal.style.display = "none";
+});
+elModal.addEventListener("click", function () {
+  elModal.style.display = "none";
+});
+elBigImage.addEventListener("click", function (e) {
+  // e, evt, event, evento
+  e.stopPropagation();
+});
 
+function changeImage(nextImage) {
+  let imageReference = nextImage.getAttribute("src");
+  elBigImage.setAttribute("src", imageReference);
+  elLegenda.textContent = nextImage.getAttribute("alt");
+  currentImage = nextImage;
 }
-#rightArrow {
-    right: 40px;
-}
+
+elLeftArrow.addEventListener("click", function (e) {
+  e.stopPropagation();
+  let nextImage;
+  if (currentImage !== firstImage) {
+    nextImage = currentImage.previousElementSibling;
+  } else {
+    nextImage = lastImage;
+  }
+  // console.log(nextImage);
+  changeImage(nextImage);
+});
+elRightArrow.addEventListener("click", function (e) {
+  e.stopPropagation();
+  let nextImage;
+  if (currentImage !== lastImage) {
+    nextImage = currentImage.nextElementSibling;
+  } else {
+    nextImage = firstImage;
+  }
+  // console.log(nextImage);
+  changeImage(nextImage);
+});

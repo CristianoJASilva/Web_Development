@@ -1,0 +1,19 @@
+input[type="text"] {
+  border: 1px dotted #000;
+}
+label {
+  display: inline-block;
+  width: 100px;
+}
+textarea {
+  resize: none;
+  /* resize: vertical; */
+  width: 45ch;
+  height: 50px;
+}
+#labelObs {
+  vertical-align: top;
+}
+.invalidField {
+  background-color: yellow;
+}

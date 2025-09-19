@@ -4,31 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms em HTML</title>
+    <link rel="stylesheet" href="ex5forms.css" />
   </head>
   <body>
     <h1>Registo de utilizador</h1>
     <!-- action - The URI of a program that processes the form information. -->
-    <form action="processForm.aspx">
+    <form action="processForm.aspx" novalidate id="formCreateUser">
       <p>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" />
-      </p>
-      <p>
-        <label>Morada: <input type="text" id="morada" /></label>
+        <!-- required -->
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Introduza o seu nome"
+          autofocus
+        />
+        <span id="nameFieldError"></span>
       </p>
       <p>
         <label
-          >Código Postal: <input type="text" id="cp1" />-<input
-            type="text"
+          >Morada: <input type="text" id="morada" value="Rua" maxlength="20"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Código Postal:
+          <input type="number" id="cp1" max="9999" min="1000" />-<input
+            type="number"
             id="cp2" />
-          <input type="text" id="cp_localidade"
+          <input type="text" id="cp_localidade" pattern="^[A-Za-z0-9]{5,20}$"
         /></label>
 
         <!-- <label for="cp">Código Postal:</label>
             <input type="text" id="cp" name="cp"> -->
       </p>
       <p>
-        <label for="pais">País</label>
+        <label for="pais">País:</label>
         <select id="pais">
           <option value="">-- Escolha um país --</option>
           <!-- <option value="pt">Portugal</option> -->
@@ -62,9 +74,56 @@
         <input type="checkbox" name="hobbies" id="cinema" value="cinema" />
         <label for="cinema">Cinema</label>
       </fieldset>
+
       <p>
-        <input type="submit" value="Criar utilizador" />
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" />
+      </p>
+      <p>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" />
+      </p>
+      <p>
+        <label for="data_nasc">Data de nascimento:</label>
+        <input type="date" id="data_nasc" />
+      </p>
+      <p>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" />
+      </p>
+      <p>
+        <label for="repetirSenha">Repetir senha:</label>
+        <input type="password" id="repetirSenha" />
+      </p>
+      <p>
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" />
+      </p>
+
+      <p>
+        <label for="obs" id="labelObs">Obs:</label>
+        <textarea id="obs"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" id="concordo" value="S" />
+        <label for="concordo">Concordo com os termos e condições</label>
+      </p>
+      <p>
+        <input type="submit" value="Criar utilizador" id="btSubmit" />
+        <!-- botão de JavaScript -->
+        <input type="button" value="Criar utilizador" id="btButton" />
+        <button type="submit">Criar utilizador</button>
+        <button type="button">Criar utilizador</button>
+        <input type="reset" value="Limpar campos" id="btReset" />
+        <input
+          type="image"
+          src="img/submit-button.png"
+          value="Criar utilizador"
+          id="btImage"
+          width="36"
+        />
       </p>
     </form>
+    <script src="ex5forms.js"></script>
   </body>
 </html>
